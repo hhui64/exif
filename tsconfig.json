@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "esm": true,
+    "swc": true,
+    "transpileOnly": true,
+    "experimentalSpecifierResolution": "node",
+    "files": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
